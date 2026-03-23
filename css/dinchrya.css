@@ -105,6 +105,49 @@
 .pos-card h3 { color:var(--gold); font-size:1rem; margin-bottom:0.8rem; font-family:'Playfair Display',serif; }
 .pos-card p  { color:rgba(255,255,255,0.75); font-size:0.88rem; line-height:1.9; }
 
+/* Full text block (Bhag 3) */
+.fulltext-section { background: var(--cream); }
+.fulltext-card { padding: 2.4rem; margin-top: -1rem; }
+.fulltext-title {
+  color: var(--forest);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+}
+.fulltext-paragraph {
+  color: var(--text-mid);
+  font-size: 0.98rem;
+  line-height: 2;
+  margin-bottom: 1rem;
+}
+.ft-subtitle {
+  color: var(--gold);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  margin: 1.4rem 0 0.7rem;
+}
+.ft-list {
+  padding-left: 0;
+}
+.ft-list li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin: 0.6rem 0;
+  color: var(--text-mid);
+  font-size: 0.96rem;
+  line-height: 1.9;
+}
+.ft-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  color: var(--leaf);
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
 /* DO / DONT */
 .dodont-section { background: linear-gradient(180deg, #f0f7f0, var(--cream)); }
 .dodont-grid {

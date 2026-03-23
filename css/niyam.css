@@ -132,6 +132,55 @@
 }
 .bhag2-note strong { color:var(--amber); }
 
+/* Full Part Text (Bhag 1) */
+.bhag-fulltext {
+  margin-top: 2.2rem;
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 2.2rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(74,175,80,0.12);
+}
+.bhag-fulltext h3 {
+  color: var(--forest);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.bhag-fulltext p {
+  color: var(--text-mid);
+  font-size: 0.98rem;
+  line-height: 2.0;
+  margin-bottom: 1rem;
+}
+.bf-subtitle {
+  color: var(--gold);
+  font-size: 1.02rem;
+  font-family: 'Playfair Display', serif;
+  margin: 1.2rem 0 0.6rem;
+}
+.bf-list {
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+.bf-list li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin: 0.6rem 0;
+  color: var(--text-mid);
+  font-size: 0.96rem;
+  line-height: 1.9;
+}
+.bf-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  color: var(--leaf);
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
 /* HARMFUL */
 .harmful-section {
   background: linear-gradient(180deg, #1a0505, #2d0d0d, #1a0505);
