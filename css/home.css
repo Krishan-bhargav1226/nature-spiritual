@@ -206,8 +206,8 @@
 
 /* "चार मूल स्तंभ" header styling */
 .features-intro {
-  margin: 0 auto 3rem;
-  padding: 2.1rem 1.2rem;
+  margin: 0 auto 2.1rem;
+  padding: 1.85rem 1.2rem;
   border-radius: var(--radius-lg);
   background: rgba(255,255,255,0.62);
   border: 1px solid rgba(74,175,80,0.14);
@@ -274,8 +274,8 @@
 
 @media (max-width: 768px) {
   .features-intro {
-    padding: 1.6rem 1rem;
-    margin-bottom: 2.2rem;
+    padding: 1.35rem 1rem;
+    margin-bottom: 1.7rem;
   }
 
   .pillar-pill {

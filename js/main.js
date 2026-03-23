@@ -93,6 +93,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  /* ── STAGGER children with .stagger-children ── */
+  // Important: add the `.reveal` class before setting up the IntersectionObserver,
+  // otherwise these elements will never be observed (and remain invisible).
+  document.querySelectorAll('.stagger-children').forEach(parent => {
+    [...parent.children].forEach((child, i) => {
+      child.dataset.delay = (i * 0.1).toFixed(1);
+      child.classList.add('reveal');
+    });
+  });
+
   /* ── SCROLL REVEAL ── */
   const revealEls = document.querySelectorAll('.reveal, .reveal-l, .reveal-r, .reveal-scale');
   if ('IntersectionObserver' in window) {
@@ -144,13 +154,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.5 });
     counters.forEach(c => countObs.observe(c));
   }
-
-  /* ── STAGGER children with .stagger-children ── */
-  document.querySelectorAll('.stagger-children').forEach(parent => {
-    [...parent.children].forEach((child, i) => {
-      child.dataset.delay = (i * 0.1).toFixed(1);
-      child.classList.add('reveal');
-    });
-  });
 
 });
